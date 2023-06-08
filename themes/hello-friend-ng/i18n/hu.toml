@@ -1,0 +1,39 @@
+# Translations for English
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# Generic
+#
+[translations]
+other = "Fordítások"
+
+[postAvailable]
+other = "Elérhető a következő nyelv(ek)en is"
+
+
+# 404.html
+#
+[archives]
+other = "Archívum"
+
+[home]
+other = "Főoldal"
+
+[notFound]
+other = "Hoppá, ez az oldal nem található…"
+
+
+# posts/single.html
+#
+[readingTime]
+one   = "1 perce"
+other = "{{ .Count }} perce"
+
+[tableOfContents]
+other = "Tartalomjegyzék"
+
+[wordCount]
+one   = "Egy szó"
+other = "{{ .Count }} szó"
+
+[lastModified]
+other = "Utoljára frissítve"
