@@ -4,42 +4,58 @@ title = 'bothzoli'
 theme = "hello-friend-ng"
 paginate = 10
 
+[author]
+  name = "bothzoli"
+
 [params]
   dateform        = "2006 Jan 2"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
-  # Subtitle for home
   homeSubtitle = ""
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  enableThemeToggle = true
   disableReadOtherPosts = false
-
-  # Enable sharing buttons, if you like
   enableSharingButtons = true
-  
-  # Show a global language switcher in the navigation bar
   enableGlobalLanguageMenu = true
 
-  # Metadata mostly used in document's head
   description = "My new homepage and blog"
   keywords = "homepage, blog"
   images = [""]
 
+  [params.footer]
+    author = true
+    trademark = true
+    rss = true
+
+[[params.social]]
+  name = "github"
+  url = "https://www.github.com/bothzoli/"
+
+[[params.social]]
+  name = "twitter"
+  url = "https://twitter.com/bothzoli"
+
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+  category = "blog"
+  tag      = "tags"
+  series   = "series"
 
 [languages]
   [languages.en.params]
     title = "bothzoli's blog"
-    subtitle = ""
-    keywords = ""
     languageCode = 'en'
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
+
+    [[languages.en.menu.main]]
+      weight = 10
+      name   = "Blog"
+      url    = "/posts"
+
+    [[languages.en.menu.main]]
+      weight  = 20
+      name    = 'About'
+      pageRef = '/about'
 
     [languages.en.params.logo]
       logoText = "bothzoli's blog"
@@ -47,34 +63,19 @@ paginate = 10
 
   [languages.hu.params]
     title = "bothzoli blogja"
-    subtitle = ""
-    keywords = ""
     languageCode = 'hu'
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+    readOtherPosts = "Többi bejegyzés olvasása"
+
+    [[languages.hu.menu.main]]
+      weight = 10
+      name   = "Blog"
+      url    = "/posts"
+
+    [[languages.hu.menu.main]]
+      weight  = 20
+      name    = 'Rólam'
+      pageRef = '/about'
 
     [languages.hu.params.logo]
       logoText = "bothzoli blogja"
       logoHomeLink = "/hu"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
-
-  [[menu.main]]
-    identifier = 'aboutme'
-    name = 'About Me'
-    pageRef = '/aboutme'
-
-  [[params.social]]
-    name = "github"
-    url = "https://www.github.com/bothzoli/"
-
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/bothzoli"

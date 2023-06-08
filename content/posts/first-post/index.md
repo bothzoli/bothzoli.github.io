@@ -1,15 +1,20 @@
 ---
-title: "My First Post"
-date: 2023-06-08T08:20:03+02:00
+title: "The first post"
+date: 2023-06-06T08:20:03+02:00
 draft: false
 toc: false
 tags:
   - en
   - misc
+  - tractor
 ---
 
-## Introduction
+## The first post
 
 This is **bold** text, and this is *emphasized* text.
 
 Visit the [Hugo](https://gohugo.io) website!
+
+And this is a tractor:
+
+![traktor](./img/traktor.png)

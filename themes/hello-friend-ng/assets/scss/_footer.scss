@@ -29,7 +29,7 @@
     }
 
     & > *:not(:last-child)::after {
-      content: "•";
+      content: "|";
       padding: 0 5px;
 
       @media #{$media-size-tablet} {
