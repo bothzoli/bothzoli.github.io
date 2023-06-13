@@ -17,7 +17,7 @@ The idea was to create a SHA256 hash for a set of files and store them for check
 PowerShell can easily convert to and from CSV format so that was an obvious choice.
 
 So the hash calculation will go as follows:
-- Read all files
+- Get all files in the current directory recursively
 - Calculate the SHA256 for each file using the `Get-FileHash` cmdlet
 - Store the relative file paths and corresponding SHA256 hashes in a CSV format
 
@@ -71,7 +71,7 @@ $files |
     $hash = Get-FileHash -Algorithm SHA256 -LiteralPath $_
 
     # Converting the paths to relative (check needs to be able to run from a different location)
-    # Converting the HashTable to PSCustomObject fo ConvertTo-Csv
+    # Converting the HashTable to PSCustomObject for ConvertTo-Csv
     # (see also https://github.com/PowerShell/PowerShell/issues/10999)
     [PSCustomObject]@{ 
       Path = $(Resolve-Path -LiteralPath $_ -Relative)
