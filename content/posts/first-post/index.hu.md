@@ -15,6 +15,6 @@ Ez a szöveg **félkövér**, ez pedig *kiemelt*.
 
 Nézd meg a [Hugo](https://hohugo.io) weboldalt.
 
-Ez meg egy traktor:
+Ez meg egy traktoros kép:
 
 ![traktor](./img/traktor.png)

@@ -15,6 +15,6 @@ This is **bold** text, and this is *emphasized* text.
 
 Visit the [Hugo](https://gohugo.io) website!
 
-And this is a tractor:
+And this is an image with tractors:
 
 ![traktor](./img/traktor.png)
