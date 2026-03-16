@@ -4,9 +4,6 @@ title = 'bothzoli'
 theme = "hello-friend-ng"
 paginate = 10
 
-[author]
-  name = "bothzoli"
-
 [params]
   dateform        = "2006 Jan 2"
   dateformShort   = "Jan 2"
@@ -23,10 +20,13 @@ paginate = 10
   keywords = "homepage, blog"
   images = [""]
 
-  [params.footer]
-    author = true
-    trademark = true
-    rss = true
+[params.author]
+  name = "bothzoli"
+
+[params.footer]
+  author = true
+  trademark = 2026
+  rss = true
 
 [[params.social]]
   name = "github"
