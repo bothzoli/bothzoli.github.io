@@ -39,6 +39,8 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.119.0'
+      - name: Install Dart Sass Embedded
+        run: sudo snap install dart-sass-embedded
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
