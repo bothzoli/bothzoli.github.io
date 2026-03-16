@@ -39,6 +39,8 @@ jobs:
           hugo-version: 0.111.3
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
